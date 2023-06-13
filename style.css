@@ -31,6 +31,7 @@ button:hover {
     width: fit-content;
     height: fit-content;
     border: 2px  white  solid;
+    border-radius: 4px;
     padding: 1.5em 1em;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -44,6 +45,7 @@ button:hover {
 
 #screen {
     border: 2px white solid;
+    border-radius: 4px;
     padding: 0.5em;
     margin-bottom: 1em;
     background-color: rgba(0, 0, 0, 0.4);
