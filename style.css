@@ -43,10 +43,13 @@ button:hover {
 
 #screen {
     border: 2px white solid;
-    padding: 50px;
-    margin-bottom: 3em;
+    padding: 0.5em;
+    margin-bottom: 1em;
     background-color: rgba(0, 0, 0, 0.4);
     grid-area: screen;
+    color: white;
+    font-size: 2em;
+    text-align: right;
 }
 
 #btn-0 {
