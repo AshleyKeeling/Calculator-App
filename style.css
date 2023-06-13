@@ -1,0 +1,116 @@
+body {
+    background: linear-gradient(to right, #e96443, #904e95);
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+h1 {
+    color: white;
+    font-weight: 300;
+    font-size: 3em;
+    text-align: center;
+}
+
+button {
+  padding: 12px 24px;
+  margin: 0.2em;
+  background-color: rgba(255, 255, 255, 0.4);
+  color: #FFFFFF;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: rgba(95, 95, 95, 0.2);
+}
+
+#calculator {
+    margin: 5em auto 0;
+    width:fit-content;
+    border: 2px  white  solid;
+    padding: 1.5em 1em;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas:
+                        'screen screen screen screen screen'
+                        'btn-7 btn-8 btn-9 btn-del btn-clear'
+                        'btn-4 btn-5 btn-6 btn-multiply btn-divide'
+                        'btn-1 btn-2 btn-3 btn-plus btn-minus'
+                        'btn-0 btn-dot btn-equal btn-equal btn-equal';
+}
+
+#screen {
+    border: 2px white solid;
+    padding: 50px;
+    margin-bottom: 3em;
+    background-color: rgba(0, 0, 0, 0.4);
+    grid-area: screen;
+}
+
+#btn-0 {
+    grid-area: btn-0;
+}
+#btn-1 {
+    grid-area: btn-1;
+}
+#btn-2{
+    grid-area: btn-2;
+}
+#btn-3 {
+    grid-area: btn-3;
+}
+#btn-4 {
+    grid-area: btn-4;
+}
+#btn-5 {
+    grid-area: btn-5;
+}
+#btn-6 {
+    grid-area: btn-6;
+}
+#btn-7 {
+    grid-area: btn-7;
+}
+#btn-8 {
+    grid-area: btn-8;
+}
+#btn-9 {
+    grid-area: btn-9;
+}
+#btn-del {
+    grid-area: btn-del;
+}
+#btn-clear {
+    grid-area: btn-clear;
+}
+#btn-multiply {
+    grid-area: btn-multiply;
+}
+#btn-divide {
+    grid-area: btn-divide;
+}
+#btn-plus {
+    grid-area: btn-plus;
+}
+#btn-minus {
+    grid-area: btn-minus;
+}
+#btn-dot {
+    grid-area: btn-dot;
+}
+#btn-equal {
+    grid-area: btn-equal;
+}
+
+
+
+
+
+
+
+
+
+
