@@ -11,7 +11,7 @@ h1 {
 }
 
 button {
-  padding: 12px 24px;
+  padding: 1.2em 1.2em;
   margin: 0.2em;
   background-color: rgba(255, 255, 255, 0.2);
   color: #FFFFFF;
@@ -28,7 +28,8 @@ button:hover {
 
 #calculator {
     margin: 5em auto 0;
-    width:fit-content;
+    width: fit-content;
+    height: fit-content;
     border: 2px  white  solid;
     padding: 1.5em 1em;
     display: grid;
