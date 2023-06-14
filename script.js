@@ -1,6 +1,11 @@
-let userNum;
-let operator;
-let total;
+let userNum = '';
+let operator = '';
+let total = 0;
+
+// total operator userNum
+let mathString = '';
+
+const calcScreen = document.getElementById('screen');
 
 const btnDel = document.getElementById('btn-del');
 const btnClear = document.getElementById('btn-clear');
@@ -42,11 +47,16 @@ function calcDelete(){
 
 function calcClear(){
     console.log('clear');
+    userNum = '';
+    total = 0;
+    operator = '';
+    updateScreen(userNum);
 }
 
-function calcOperator(operator) {
-    console.log(operator);
-    return operator;
+function calcOperator(operatorType) {
+    mathString = eval(mathString) + operatorType;
+    userNum = '';
+    updateScreen(operator);
 }
 
 function calcDot(){
@@ -55,10 +65,23 @@ function calcDot(){
 
 function calcEqual(){
     console.log('=');
+    total = eval(mathString);
+    userNum = '';
+    updateScreen(total);
+    console.log('math-' + mathString);
 }
 
 function calcNumber(num) {
   console.log(num);
-  return num;
+  mathString += num.toString();
+  userNum += num.toString();
+  console.log(userNum);
+  updateScreen(userNum);
+  console.log('math-' + mathString);
 }
-
+function updateScreen(content) {
+    console.log('screen updated');
+    console.log('TOTAL: ' + total);
+    console.log('USER NUM: ' + userNum);
+    calcScreen.innerHTML = content;
+}
