@@ -1,7 +1,5 @@
 let userNum = '';
-let operator = '';
 let total = 0;
-
 // total operator userNum
 let mathString = '';
 
@@ -49,7 +47,7 @@ function calcClear(){
     console.log('clear');
     userNum = '';
     total = 0;
-    operator = '';
+    mathString = '';
     updateScreen(userNum);
 }
 
@@ -61,6 +59,9 @@ function calcOperator(operatorType) {
 
 function calcDot(){
     console.log('.');
+    mathString += '.';
+    userNum += '.';
+    updateScreen(userNum);
 }
 
 function calcEqual(){
@@ -72,13 +73,14 @@ function calcEqual(){
 }
 
 function calcNumber(num) {
-  console.log(num);
-  mathString += num.toString();
-  userNum += num.toString();
-  console.log(userNum);
-  updateScreen(userNum);
-  console.log('math-' + mathString);
+    console.log(num);
+    mathString += num.toString();
+    userNum += num.toString();
+    console.log(userNum);
+    updateScreen(userNum);
+    console.log('math-' + mathString);
 }
+
 function updateScreen(content) {
     console.log('screen updated');
     console.log('TOTAL: ' + total);
