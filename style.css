@@ -48,7 +48,7 @@ button:hover {
     border-radius: 4px;
     padding: 0.5em;
     margin-bottom: 1em;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(54, 53, 53, 0.2);
     grid-area: screen;
     color: white;
     font-size: 2em;
